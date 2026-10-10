@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Japanese Ramen Simulator Recipes - Complete Ramen Guide</title>
+    <meta name="description" content="Complete recipe guide for Japanese Ramen Simulator. All ramen types, cooking techniques, and broth recipes.">
+    <link rel="canonical" href="https://japaneseramensimulator.online/recipes.html">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        ramen: { red: '#DC2626', orange: '#EA580C', yellow: '#FACC15', cream: '#FEF3C7', dark: '#1C1917', darker: '#0C0A09' }
+                    },
+                    fontFamily: { 'jp': ['Noto Sans JP', 'sans-serif'], 'sans': ['Inter', 'sans-serif'] }
+                }
+            }
+        }
+    </script>
+    <style>
+        * { box-sizing: border-box; }
+        body { background: linear-gradient(180deg, #1C1917 0%, #0C0A09 100%); min-height: 100vh; font-family: 'Inter', sans-serif; }
+        .card-ramen { background: linear-gradient(135deg, rgba(45,32,22,0.95) 0%, rgba(28,25,23,0.98) 100%); border: 1px solid rgba(234,88,12,0.2); }
+        .text-ramen-orange { color: #EA580C; }
+        .text-ramen-cream { color: #FEF3C7; }
+        .border-ramen { border-color: rgba(234,88,12,0.3); }
+        .divider { height: 2px; background: linear-gradient(90deg, transparent, #DC2626, #EA580C, #FACC15, #EA580C, #DC2626, transparent); }
+        .scanline { position: fixed; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; background: repeating-linear-gradient(0deg, rgba(0,0,0,0.03) 0px, rgba(0,0,0,0.03) 1px, transparent 1px, transparent 2px); z-index: 9999; }
+    </style>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JAPANESERAMEN"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-JAPANESERAMEN');
+    </script>
+</head>
+<body class="text-ramen-cream antialiased">
+    <div class="scanline"></div>
+    <header class="card-ramen sticky top-0 z-50 border-b border-ramen/20">
+        <div class="max-w-6xl mx-auto px-6 py-4">
+            <a href="/" class="text-2xl font-bold text-ramen-orange">🍜 Japanese Ramen Simulator</a>
+        </div>
+    </header>
+
+    <main class="max-w-4xl mx-auto px-6 py-12">
+        <h1 class="text-4xl font-bold text-ramen-cream mb-8">Recipe Guide</h1>
+
+        <div class="space-y-8">
+            <div class="card-ramen rounded-xl p-6">
+                <h2 class="text-2xl font-bold text-ramen-orange mb-4">Tonkotsu Ramen (Pork Bone Broth)</h2>
+                <p class="text-ramen-cream/70 mb-4">The classic creamy white pork broth ramen from Kyushu.</p>
+                <h3 class="text-lg font-semibold text-ramen-cream mb-2">Broth:</h3>
+                <ul class="list-disc list-inside text-ramen-cream/60 space-y-1 mb-4">
+                    <li>Pork bones (12+ hours simmer)</li>
+                    <li>Pork fat</li>
+                    <li>Garlic, ginger, green onion</li>
+                </ul>
+                <h3 class="text-lg font-semibold text-ramen-cream mb-2">Toppings:</h3>
+                <ul class="list-disc list-inside text-ramen-cream/60 space-y-1">
+                    <li>Chashu pork slices</li>
+                    <li>Soft-boiled egg (ajitsuke tamago)</li>
+                    <li>Green onions, nori</li>
+                    <li>Black garlic oil</li>
+                </ul>
+            </div>
+
+            <div class="card-ramen rounded-xl p-6">
+                <h2 class="text-2xl font-bold text-ramen-orange mb-4">Shoyu Ramen (Soy Sauce)</h2>
+                <p class="text-ramen-cream/70 mb-4">Clear brown broth with rich soy sauce flavor.</p>
+                <h3 class="text-lg font-semibold text-ramen-cream mb-2">Broth:</h3>
+                <ul class="list-disc list-inside text-ramen-cream/60 space-y-1 mb-4">
+                    <li>Chicken bones</li>
+                    <li>Soy sauce base</li>
+                    <li>Kombu, dried sardines</li>
+                </ul>
+                <h3 class="text-lg font-semibold text-ramen-cream mb-2">Toppings:</h3>
+                <ul class="list-disc list-inside text-ramen-cream/60 space-y-1">
+                    <li>Chashu pork</li>
+                    <li>Bamboo shoots (menma)</li>
+                    <li>Nori, green onions</li>
+                </ul>
+            </div>
+
+            <div class="card-ramen rounded-xl p-6">
+                <h2 class="text-2xl font-bold text-ramen-orange mb-4">Miso Ramen</h2>
+                <p class="text-ramen-cream/70 mb-4">Hearty miso-based broth from Hokkaido.</p>
+                <h3 class="text-lg font-semibold text-ramen-cream mb-2">Broth:</h3>
+                <ul class="list-disc list-inside text-ramen-cream/60 space-y-1 mb-4">
+                    <li>Chicken and pork bones</li>
+                    <li>White or red miso paste</li>
+                    <li>Corn, butter</li>
+                </ul>
+                <h3 class="text-lg font-semibold text-ramen-cream mb-2">Toppings:</h3>
+                <ul class="list-disc list-inside text-ramen-cream/60 space-y-1">
+                    <li>Ground pork</li>
+                    <li>Corn, bean sprouts</li>
+                    <li>Green onions, butter</li>
+                </ul>
+            </div>
+
+            <div class="card-ramen rounded-xl p-6">
+                <h2 class="text-2xl font-bold text-ramen-orange mb-4">Shio Ramen (Salt)</h2>
+                <p class="text-ramen-cream/70 mb-4">Light and clear salt-based broth.</p>
+                <h3 class="text-lg font-semibold text-ramen-cream mb-2">Broth:</h3>
+                <ul class="list-disc list-inside text-ramen-cream/60 space-y-1 mb-4">
+                    <li>Chicken bones</li>
+                    <li>Sea salt, kombu</li>
+                    <li>Light vegetables</li>
+                </ul>
+                <h3 class="text-lg font-semibold text-ramen-cream mb-2">Toppings:</h3>
+                <ul class="list-disc list-inside text-ramen-cream/60 space-y-1">
+                    <li>Ham, chicken slices</li>
+                    <li>Spinach, naruto</li>
+                    <li>Citrus peel</li>
+                </ul>
+            </div>
+
+            <div class="card-ramen rounded-xl p-6">
+                <h2 class="text-2xl font-bold text-ramen-orange mb-4">Cooking Tips</h2>
+                <ul class="list-disc list-inside text-ramen-cream/60 space-y-2">
+                    <li><strong>Noodle timing</strong> - Follow water temperature closely, overcooked noodles ruin the dish</li>
+                    <li><strong>Broth consistency</strong> - Skim fat regularly for clear broth</li>
+                    <li><strong>Topping prep</strong> - Prep toppings before service starts</li>
+                    <li><strong>Plating</strong> - Hold noodles with tongs, don't over-stack toppings</li>
+                    <li><strong>Customer patience</strong> - Watch the patience meter, serve before it runs out</li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <footer class="border-t border-ramen-orange/10 py-8 mt-12">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <div class="divider mb-4"></div>
+            <p class="text-ramen-cream/40 text-sm">&copy; 2026 Japanese Ramen Simulator Guide</p>
+        </div>
+    </footer>
+</body>
+</html>

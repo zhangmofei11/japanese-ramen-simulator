@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Japanese Ramen Simulator Multiplayer - Co-op Guide</title>
+    <meta name="description" content="Multiplayer guide for Japanese Ramen Simulator. Co-op tips, role assignments, and team strategies.">
+    <link rel="canonical" href="https://japaneseramensimulator.online/multiplayer.html">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        ramen: { red: '#DC2626', orange: '#EA580C', yellow: '#FACC15', cream: '#FEF3C7', dark: '#1C1917', darker: '#0C0A09' }
+                    },
+                    fontFamily: { 'jp': ['Noto Sans JP', 'sans-serif'], 'sans': ['Inter', 'sans-serif'] }
+                }
+            }
+        }
+    </script>
+    <style>
+        * { box-sizing: border-box; }
+        body { background: linear-gradient(180deg, #1C1917 0%, #0C0A09 100%); min-height: 100vh; font-family: 'Inter', sans-serif; }
+        .card-ramen { background: linear-gradient(135deg, rgba(45,32,22,0.95) 0%, rgba(28,25,23,0.98) 100%); border: 1px solid rgba(234,88,12,0.2); }
+        .text-ramen-orange { color: #EA580C; }
+        .text-ramen-cream { color: #FEF3C7; }
+        .divider { height: 2px; background: linear-gradient(90deg, transparent, #DC2626, #EA580C, #FACC15, #EA580C, #DC2626, transparent); }
+        .scanline { position: fixed; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; background: repeating-linear-gradient(0deg, rgba(0,0,0,0.03) 0px, rgba(0,0,0,0.03) 1px, transparent 1px, transparent 2px); z-index: 9999; }
+    </style>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JAPANESERAMEN"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-JAPANESERAMEN');
+    </script>
+</head>
+<body class="text-ramen-cream antialiased">
+    <div class="scanline"></div>
+    <header class="card-ramen sticky top-0 z-50 border-b border-ramen/20">
+        <div class="max-w-6xl mx-auto px-6 py-4">
+            <a href="/" class="text-2xl font-bold text-ramen-orange">🍜 Japanese Ramen Simulator</a>
+        </div>
+    </header>
+
+    <main class="max-w-4xl mx-auto px-6 py-12">
+        <h1 class="text-4xl font-bold text-ramen-cream mb-8">Multiplayer Guide</h1>
+
+        <div class="space-y-8">
+            <div class="card-ramen rounded-xl p-6">
+                <h2 class="text-2xl font-bold text-ramen-orange mb-4">Recommended Team Roles</h2>
+                <ul class="list-disc list-inside text-ramen-cream/60 space-y-2">
+                    <li><strong>Head Chef</strong> - Coordinates kitchen, manages orders</li>
+                    <li><strong>Noodle Cook</strong> - Boils noodles to perfect timing</li>
+                    <li><strong>Broth Master</strong> - Prepares and seasons broths</li>
+                    <li><strong>Topping Specialist</strong> - Prepares and plates toppings</li>
+                    <li><strong>Server</strong> - Takes orders, serves customers</li>
+                    <li><strong>Cashier</strong> - Handles payments, tips, and upgrades</li>
+                </ul>
+            </div>
+
+            <div class="card-ramen rounded-xl p-6">
+                <h2 class="text-2xl font-bold text-ramen-orange mb-4">Co-op Strategies</h2>
+                <ul class="list-disc list-inside text-ramen-cream/60 space-y-2">
+                    <li><strong>Assembly line</strong> - Each person handles one component</li>
+                    <li><strong>Communication</strong> - Call out orders and timing</li>
+                    <li><strong>Prep during downtime</strong> - Prepare toppings between orders</li>
+                    <li><strong>Backup system</strong> - Know how to cover other roles</li>
+                </ul>
+            </div>
+
+            <div class="card-ramen rounded-xl p-6">
+                <h2 class="text-2xl font-bold text-ramen-orange mb-4">Communication Tips</h2>
+                <ul class="list-disc list-inside text-ramen-cream/60 space-y-2">
+                    <li>Use spatial voice chat for in-game communication</li>
+                    <li>Call out "order up" when ramen is ready</li>
+                    <li>Warn teammates about angry customers</li>
+                    <li>Announce when running low on ingredients</li>
+                    <li>Coordinate upgrades and purchases</li>
+                </ul>
+            </div>
+
+            <div class="card-ramen rounded-xl p-6">
+                <h2 class="text-2xl font-bold text-ramen-orange mb-4">Handling Rush Hours</h2>
+                <ul class="list-disc list-inside text-ramen-cream/60 space-y-2">
+                    <li>Focus on speed over perfection</li>
+                    <li>Skip complex recipes during rush</li>
+                    <li>Server takes orders while kitchen cooks</li>
+                    <li>Keep simple broth ready as backup</li>
+                    <li>Don't let customers leave angry - prioritize them</li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <footer class="border-t border-ramen-orange/10 py-8 mt-12">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <div class="divider mb-4"></div>
+            <p class="text-ramen-cream/40 text-sm">&copy; 2026 Japanese Ramen Simulator Guide</p>
+        </div>
+    </footer>
+</body>
+</html>
