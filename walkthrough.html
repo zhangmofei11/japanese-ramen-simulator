@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beginner's Walkthrough - Japanese Ramen Simulator Guide</title>
+    <meta name="description" content="Complete beginner's guide to Japanese Ramen Simulator. Learn day one strategies, early game tips, customer service basics, and upgrade priorities.">
+    <meta name="keywords" content="Japanese Ramen Simulator walkthrough, beginner guide, day one tips, early game strategy, ramen shop tutorial">
+    <link rel="canonical" href="https://japaneseramensimulator.online/walkthrough.html">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        ramen: { red: '#DC2626', orange: '#EA580C', yellow: '#FACC15', cream: '#FEF3C7', dark: '#1C1917', darker: '#0C0A09' },
+                        broth: { light: '#F5F0E8', dark: '#2D2016' }
+                    },
+                    fontFamily: { 'jp': ['Noto Sans JP', 'sans-serif'], 'sans': ['Inter', 'sans-serif'] }
+                }
+            }
+        }
+    </script>
+    <style>
+        * { box-sizing: border-box; }
+        body { background: linear-gradient(180deg, #1C1917 0%, #0C0A09 100%); min-height: 100vh; font-family: 'Inter', sans-serif; }
+        .card-ramen { background: linear-gradient(135deg, rgba(45,32,22,0.95) 0%, rgba(28,25,23,0.98) 100%); border: 1px solid rgba(234,88,12,0.2); }
+        .card-ramen:hover { border-color: rgba(234,88,12,0.5); transform: translateY(-2px); }
+        .text-ramen-red { color: #DC2626; }
+        .text-ramen-orange { color: #EA580C; }
+        .text-ramen-cream { color: #FEF3C7; }
+        .border-ramen { border-color: rgba(234,88,12,0.3); }
+        .divider { height: 2px; background: linear-gradient(90deg, transparent, #DC2626, #EA580C, #FACC15, #EA580C, #DC2626, transparent); }
+    </style>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QSV9HMT98E"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-QSV9HMT98E');
+    </script>
+    <script async="async" data-cfasync="false" src="https://bauval.org/21/1b8db40ffc64bf3a1952600e0b795216"></script>
+    <script data-cfasync="false" src="https://bauval.org/14/55b434e62d3f820a04a13088766e48ed"></script>
+    <script>
+      atOptions = { 'key' : 'ac2470d524e3e2001035245db8f980ca', 'format' : 'iframe', 'height' : 250, 'width' : 300, 'params' : {} };
+    </script>
+    <script src="https://bauval.org/22/ac2470d524e3e2001035245db8f980ca"></script>
+</head>
+<body class="text-ramen-cream antialiased">
+    <header class="card-ramen sticky top-0 z-50 border-b border-ramen/20">
+        <div class="max-w-6xl mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <a href="/" class="flex items-center gap-4 group">
+                    <div class="w-14 h-14 rounded-lg bg-gradient-to-br from-ramen-red to-ramen-orange flex items-center justify-center shadow-lg">
+                        <span class="text-3xl">🍜</span>
+                    </div>
+                    <div>
+                        <span class="font-bold text-2xl text-ramen-cream tracking-wide">JAPANESE RAMEN</span>
+                        <span class="block text-xs text-ramen-orange tracking-widest">SIMULATOR</span>
+                    </div>
+                </a>
+                <nav class="hidden lg:flex items-center gap-2">
+                    <a href="/" class="px-4 py-2 text-ramen-cream/70 hover:text-ramen-orange hover:bg-ramen-cream/5 rounded-lg transition-all">Home</a>
+                    <a href="recipes.html" class="px-4 py-2 text-ramen-cream/70 hover:text-ramen-orange hover:bg-ramen-cream/5 rounded-lg transition-all">Recipes</a>
+                    <a href="ingredients.html" class="px-4 py-2 text-ramen-cream/70 hover:text-ramen-orange hover:bg-ramen-cream/5 rounded-lg transition-all">Ingredients</a>
+                    <a href="tips.html" class="px-4 py-2 text-ramen-cream/70 hover:text-ramen-orange hover:bg-ramen-cream/5 rounded-lg transition-all">Tips</a>
+                    <a href="walkthrough.html" class="px-4 py-2 text-ramen-orange bg-ramen-orange/10 rounded-lg border border-ramen-orange/30 font-medium">Walkthrough</a>
+                    <a href="multiplayer.html" class="px-4 py-2 text-ramen-cream/70 hover:text-ramen-orange hover:bg-ramen-cream/5 rounded-lg transition-all">Multiplayer</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-6 py-12">
+        <section class="text-center mb-12">
+            <h1 class="text-4xl md:text-5xl font-black text-ramen-cream mb-4">BEGINNER'S WALKTHROUGH</h1>
+            <p class="text-ramen-cream/60 text-lg max-w-2xl mx-auto">Your first day and week guide to running a successful ramen shop</p>
+        </section>
+
+        <div class="divider mb-12"></div>
+
+        <!-- Day One Guide -->
+        <section class="mb-12">
+            <h2 class="text-3xl font-bold text-ramen-orange mb-6">📅 Day One: Opening Your Shop</h2>
+            <div class="card-ramen rounded-xl p-6">
+                <div class="space-y-4">
+                    <div class="flex gap-4">
+                        <div class="w-24 shrink-0 text-ramen-orange font-bold">Morning</div>
+                        <div class="text-ramen-cream/70 text-sm">Complete the tutorial prompts. Practice boiling noodles and assembling your first bowl. Don't worry about speed yet - focus on learning the controls.</div>
+                    </div>
+                    <div class="flex gap-4">
+                        <div class="w-24 shrink-0 text-ramen-orange font-bold">Midday</div>
+                        <div class="text-ramen-cream/70 text-sm">Your first customers arrive. Start with simple orders - one ramen type only. Read customer reactions to learn preferences.</div>
+                    </div>
+                    <div class="flex gap-4">
+                        <div class="w-24 shrink-0 text-ramen-orange font-bold">Evening</div>
+                        <div class="text-ramen-cream/70 text-sm">First rush hour. Keep calm, prioritize quality over speed. Close shop before you get overwhelmed to maintain morale.</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Early Game Tips -->
+        <section class="mb-12">
+            <h2 class="text-3xl font-bold text-ramen-orange mb-6">💡 Early Game Priorities</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="card-ramen rounded-xl p-6">
+                    <h3 class="text-xl font-bold text-ramen-cream mb-3">1. Master One Recipe First</h3>
+                    <p class="text-ramen-cream/70 text-sm">Don't try all recipes at once. Perfect one ramen type until you can make it consistently in under 2 minutes.</p>
+                </div>
+                <div class="card-ramen rounded-xl p-6">
+                    <h3 class="text-xl font-bold text-ramen-cream mb-3">2. Stock Basic Ingredients</h3>
+                    <p class="text-ramen-cream/70 text-sm">Always keep extra noodles, pork, and green onions. Running out mid-service is the fastest way to lose customers.</p>
+                </div>
+                <div class="card-ramen rounded-xl p-6">
+                    <h3 class="text-xl font-bold text-ramen-cream mb-3">3. Watch Customer Patience</h3>
+                    <p class="text-ramen-cream/70 text-sm">Each customer has a patience meter. If it depletes before serving, they leave AND hurt your reputation score.</p>
+                </div>
+                <div class="card-ramen rounded-xl p-6">
+                    <h3 class="text-xl font-bold text-ramen-cream mb-3">4. Save Before Closing</h3>
+                    <p class="text-ramen-cream/70 text-sm">The game auto-saves, but manually save after each successful service day to prevent progress loss.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Customer Service -->
+        <section class="mb-12">
+            <h2 class="text-3xl font-bold text-ramen-orange mb-6">👥 Customer Service Basics</h2>
+            <div class="card-ramen rounded-xl p-6">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <div>
+                        <h3 class="text-lg font-bold text-ramen-cream mb-2">Speed Matters</h3>
+                        <p class="text-ramen-cream/70 text-sm">Average service time should be under 3 minutes. Faster service = higher tips and better reviews.</p>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-bold text-ramen-cream mb-2">Accuracy Counts</h3>
+                        <p class="text-ramen-cream/70 text-sm">Wrong toppings reduce satisfaction by 40%. Always confirm orders before cooking when unsure.</p>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-bold text-ramen-cream mb-2">Fresh is Best</h3>
+                        <p class="text-ramen-cream/70 text-sm">Serve immediately after assembly. Ramen sitting for 30+ seconds loses noodles firmness and broth temperature.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Upgrade Priorities -->
+        <section class="mb-12">
+            <h2 class="text-3xl font-bold text-ramen-orange mb-6">⬆️ Recommended Upgrade Order</h2>
+            <div class="card-ramen rounded-xl p-6">
+                <ol class="space-y-3 text-sm">
+                    <li class="flex gap-3">
+                        <span class="text-ramen-orange font-bold">1.</span>
+                        <span class="text-ramen-cream/70"><strong class="text-ramen-cream">Bigger Kettle</strong> - More simultaneous boiling capacity</span>
+                    </li>
+                    <li class="flex gap-3">
+                        <span class="text-ramen-orange font-bold">2.</span>
+                        <span class="text-ramen-cream/70"><strong class="text-ramen-cream">Ingredient Storage Upgrade</strong> - Less restocking trips</span>
+                    </li>
+                    <li class="flex gap-3">
+                        <span class="text-ramen-orange font-bold">3.</span>
+                        <span class="text-ramen-cream/70"><strong class="text-ramen-cream">Second Prep Station</strong> - Prepare toppings while cooking</span>
+                    </li>
+                    <li class="flex gap-3">
+                        <span class="text-ramen-orange font-bold">4.</span>
+                        <span class="text-ramen-cream/70"><strong class="text-ramen-cream">Seating Expansion</strong> - More customers per service</span>
+                    </li>
+                    <li class="flex gap-3">
+                        <span class="text-ramen-orange font-bold">5.</span>
+                        <span class="text-ramen-cream/70"><strong class="text-ramen-cream">Staff Hire</strong> - Assign roles to handle prep and service</span>
+                    </li>
+                </ol>
+            </div>
+        </section>
+
+        <!-- Common Mistakes -->
+        <section class="mb-12">
+            <h2 class="text-3xl font-bold text-ramen-orange mb-6">⚠️ Common Beginner Mistakes</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="card-ramen rounded-xl p-6">
+                    <h3 class="text-lg font-bold text-ramen-cream mb-2">Overcooking Noodles</h3>
+                    <p class="text-ramen-cream/70 text-sm">Noodles continue cooking after draining. Slightly undercook for perfect texture when served.</p>
+                </div>
+                <div class="card-ramen rounded-xl p-6">
+                    <h3 class="text-lg font-bold text-ramen-cream mb-2">Ignoring Reputation</h3>
+                    <p class="text-ramen-cream/70 text-sm">Low reputation means fewer customers. Monitor your rating and address complaints quickly.</p>
+                </div>
+                <div class="card-ramen rounded-xl p-6">
+                    <h3 class="text-lg font-bold text-ramen-cream mb-2">Menu Overload</h3>
+                    <p class="text-ramen-cream/70 text-sm">Start with 2-3 items. More menu options = more mistakes during rush hour.</p>
+                </div>
+                <div class="card-ramen rounded-xl p-6">
+                    <h3 class="text-lg font-bold text-ramen-cream mb-2">No Backup Supplies</h3>
+                    <p class="text-ramen-cream/70 text-sm">Always order ingredients before you run out. Emergency restocking costs 50% more.</p>
+                </div>
+            </div>
+        </section>
+
+        <div class="flex justify-center py-8">
+            <div id="container-1b8db40ffc64bf3a1952600e0b795216"></div>
+        </div>
+        <div class="flex justify-center py-4">
+            <div id="container-ac2470d524e3e2001035245db8f980ca"></div>
+        </div>
+    </main>
+
+    <footer class="border-t border-ramen-orange/10 py-12 mt-8">
+        <div class="max-w-6xl mx-auto px-6 text-center">
+            <div class="divider mb-8"></div>
+            <p class="text-ramen-cream/40 text-sm">&copy; 2026 Japanese Ramen Simulator Guide. Not affiliated with Wild Dog Inc.</p>
+            <div class="mt-4 flex justify-center gap-4 text-sm">
+                <a href="recipes.html" class="text-ramen-orange/60 hover:text-ramen-orange">Recipes</a>
+                <a href="tips.html" class="text-ramen-orange/60 hover:text-ramen-orange">Tips</a>
+                <a href="multiplayer.html" class="text-ramen-orange/60 hover:text-ramen-orange">Multiplayer</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

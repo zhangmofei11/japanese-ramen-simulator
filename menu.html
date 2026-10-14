@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu & Pricing Guide - Japanese Ramen Simulator Guide</title>
+    <meta name="description" content="Complete menu guide for Japanese Ramen Simulator. All dish prices, profit margins, ingredient costs, and menu optimization strategies.">
+    <meta name="keywords" content="Japanese Ramen Simulator menu, ramen prices, profit margin, ingredient cost, menu guide">
+    <link rel="canonical" href="https://japaneseramensimulator.online/menu.html">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        ramen: { red: '#DC2626', orange: '#EA580C', yellow: '#FACC15', cream: '#FEF3C7', dark: '#1C1917', darker: '#0C0A09' },
+                        broth: { light: '#F5F0E8', dark: '#2D2016' }
+                    },
+                    fontFamily: { 'jp': ['Noto Sans JP', 'sans-serif'], 'sans': ['Inter', 'sans-serif'] }
+                }
+            }
+        }
+    </script>
+    <style>
+        * { box-sizing: border-box; }
+        body { background: linear-gradient(180deg, #1C1917 0%, #0C0A09 100%); min-height: 100vh; font-family: 'Inter', sans-serif; }
+        .card-ramen { background: linear-gradient(135deg, rgba(45,32,22,0.95) 0%, rgba(28,25,23,0.98) 100%); border: 1px solid rgba(234,88,12,0.2); }
+        .card-ramen:hover { border-color: rgba(234,88,12,0.5); transform: translateY(-2px); }
+        .text-ramen-red { color: #DC2626; }
+        .text-ramen-orange { color: #EA580C; }
+        .text-ramen-cream { color: #FEF3C7; }
+        .border-ramen { border-color: rgba(234,88,12,0.3); }
+        .divider { height: 2px; background: linear-gradient(90deg, transparent, #DC2626, #EA580C, #FACC15, #EA580C, #DC2626, transparent); }
+    </style>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QSV9HMT98E"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-QSV9HMT98E');
+    </script>
+    <script async="async" data-cfasync="false" src="https://bauval.org/21/1b8db40ffc64bf3a1952600e0b795216"></script>
+    <script data-cfasync="false" src="https://bauval.org/14/55b434e62d3f820a04a13088766e48ed"></script>
+    <script>
+      atOptions = { 'key' : 'ac2470d524e3e2001035245db8f980ca', 'format' : 'iframe', 'height' : 250, 'width' : 300, 'params' : {} };
+    </script>
+    <script src="https://bauval.org/22/ac2470d524e3e2001035245db8f980ca"></script>
+</head>
+<body class="text-ramen-cream antialiased">
+    <header class="card-ramen sticky top-0 z-50 border-b border-ramen/20">
+        <div class="max-w-6xl mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <a href="/" class="flex items-center gap-4 group">
+                    <div class="w-14 h-14 rounded-lg bg-gradient-to-br from-ramen-red to-ramen-orange flex items-center justify-center shadow-lg">
+                        <span class="text-3xl">🍜</span>
+                    </div>
+                    <div>
+                        <span class="font-bold text-2xl text-ramen-cream tracking-wide">JAPANESE RAMEN</span>
+                        <span class="block text-xs text-ramen-orange tracking-widest">SIMULATOR</span>
+                    </div>
+                </a>
+                <nav class="hidden lg:flex items-center gap-2">
+                    <a href="/" class="px-4 py-2 text-ramen-cream/70 hover:text-ramen-orange hover:bg-ramen-cream/5 rounded-lg transition-all">Home</a>
+                    <a href="menu.html" class="px-4 py-2 text-ramen-orange bg-ramen-orange/10 rounded-lg border border-ramen-orange/30 font-medium">Menu</a>
+                    <a href="recipes.html" class="px-4 py-2 text-ramen-cream/70 hover:text-ramen-orange hover:bg-ramen-cream/5 rounded-lg transition-all">Recipes</a>
+                    <a href="upgrades.html" class="px-4 py-2 text-ramen-cream/70 hover:text-ramen-orange hover:bg-ramen-cream/5 rounded-lg transition-all">Upgrades</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-6 py-12">
+        <section class="text-center mb-12">
+            <h1 class="text-4xl md:text-5xl font-black text-ramen-cream mb-4">MENU & PRICING</h1>
+            <p class="text-ramen-cream/60 text-lg max-w-2xl mx-auto">Maximize profits with the right menu strategy</p>
+        </section>
+
+        <div class="divider mb-12"></div>
+
+        <!-- Ramen Menu -->
+        <section class="mb-12">
+            <h2 class="text-3xl font-bold text-ramen-orange mb-6">🍜 Ramen Dishes</h2>
+            <div class="card-ramen rounded-xl overflow-hidden">
+                <table class="w-full text-sm">
+                    <thead class="bg-ramen-orange/10">
+                        <tr>
+                            <th class="text-left p-4 text-ramen-cream">Dish</th>
+                            <th class="text-center p-4 text-ramen-cream">Price</th>
+                            <th class="text-center p-4 text-ramen-cream">Cost</th>
+                            <th class="text-center p-4 text-ramen-cream">Profit</th>
+                            <th class="text-center p-4 text-ramen-cream">Margin</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-ramen-orange/10">
+                        <tr>
+                            <td class="p-4 text-ramen-cream">Shoyu Ramen (Soy)</td>
+                            <td class="p-4 text-center text-ramen-orange">¥980</td>
+                            <td class="p-4 text-center text-ramen-cream/50">¥320</td>
+                            <td class="p-4 text-center text-green-400">¥660</td>
+                            <td class="p-4 text-center text-green-400">67%</td>
+                        </tr>
+                        <tr>
+                            <td class="p-4 text-ramen-cream">Shio Ramen (Salt)</td>
+                            <td class="p-4 text-center text-ramen-orange">¥950</td>
+                            <td class="p-4 text-center text-ramen-cream/50">¥300</td>
+                            <td class="p-4 text-center text-green-400">¥650</td>
+                            <td class="p-4 text-center text-green-400">68%</td>
+                        </tr>
+                        <tr>
+                            <td class="p-4 text-ramen-cream">Miso Ramen</td>
+                            <td class="p-4 text-center text-ramen-orange">¥1,100</td>
+                            <td class="p-4 text-center text-ramen-cream/50">¥380</td>
+                            <td class="p-4 text-center text-green-400">¥720</td>
+                            <td class="p-4 text-center text-green-400">65%</td>
+                        </tr>
+                        <tr>
+                            <td class="p-4 text-ramen-cream">Tonkotsu Ramen</td>
+                            <td class="p-4 text-center text-ramen-orange">¥1,200</td>
+                            <td class="p-4 text-center text-ramen-cream/50">¥450</td>
+                            <td class="p-4 text-center text-green-400">¥750</td>
+                            <td class="p-4 text-center text-green-400">63%</td>
+                        </tr>
+                        <tr>
+                            <td class="p-4 text-ramen-cream">Spicy Tan-Men</td>
+                            <td class="p-4 text-center text-ramen-orange">¥1,350</td>
+                            <td class="p-4 text-center text-ramen-cream/50">¥520</td>
+                            <td class="p-4 text-center text-green-400">¥830</td>
+                            <td class="p-4 text-center text-green-400">61%</td>
+                        </tr>
+                        <tr>
+                            <td class="p-4 text-ramen-cream">Vegetarian Shojin</td>
+                            <td class="p-4 text-center text-ramen-orange">¥1,050</td>
+                            <td class="p-4 text-center text-ramen-cream/50">¥280</td>
+                            <td class="p-4 text-center text-green-400">¥770</td>
+                            <td class="p-4 text-center text-green-400">73%</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Side Dishes -->
+        <section class="mb-12">
+            <h2 class="text-3xl font-bold text-ramen-orange mb-6">🍽️ Side Dishes</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                <div class="card-ramen rounded-xl p-5">
+                    <div class="flex justify-between items-start mb-2">
+                        <h3 class="text-lg font-bold text-ramen-cream">Gyoza (6pc)</h3>
+                        <span class="text-ramen-orange font-bold">¥580</span>
+                    </div>
+                    <p class="text-ramen-cream/50 text-xs">Cost: ¥180 | Margin: 69%</p>
+                </div>
+                <div class="card-ramen rounded-xl p-5">
+                    <div class="flex justify-between items-start mb-2">
+                        <h3 class="text-lg font-bold text-ramen-cream">Fried Rice</h3>
+                        <span class="text-ramen-orange font-bold">¥650</span>
+                    </div>
+                    <p class="text-ramen-cream/50 text-xs">Cost: ¥220 | Margin: 66%</p>
+                </div>
+                <div class="card-ramen rounded-xl p-5">
+                    <div class="flex justify-between items-start mb-2">
+                        <h3 class="text-lg font-bold text-ramen-cream">Edamame</h3>
+                        <span class="text-ramen-orange font-bold">¥380</span>
+                    </div>
+                    <p class="text-ramen-cream/50 text-xs">Cost: ¥80 | Margin: 79%</p>
+                </div>
+                <div class="card-ramen rounded-xl p-5">
+                    <div class="flex justify-between items-start mb-2">
+                        <h3 class="text-lg font-bold text-ramen-cream">Extra Toppings</h3>
+                        <span class="text-ramen-orange font-bold">¥150</span>
+                    </div>
+                    <p class="text-ramen-cream/50 text-xs">Cost: ¥40 | Margin: 73%</p>
+                </div>
+                <div class="card-ramen rounded-xl p-5">
+                    <div class="flex justify-between items-start mb-2">
+                        <h3 class="text-lg font-bold text-ramen-cream">Beer (Local)</h3>
+                        <span class="text-ramen-orange font-bold">¥450</span>
+                    </div>
+                    <p class="text-ramen-cream/50 text-xs">Cost: ¥120 | Margin: 73%</p>
+                </div>
+                <div class="card-ramen rounded-xl p-5">
+                    <div class="flex justify-between items-start mb-2">
+                        <h3 class="text-lg font-bold text-ramen-cream">Green Tea</h3>
+                        <span class="text-ramen-orange font-bold">¥280</span>
+                    </div>
+                    <p class="text-ramen-cream/50 text-xs">Cost: ¥50 | Margin: 82%</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pricing Strategy -->
+        <section class="mb-12">
+            <h2 class="text-3xl font-bold text-ramen-orange mb-6">💡 Menu Strategy</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="card-ramen rounded-xl p-6">
+                    <h3 class="text-lg font-bold text-ramen-cream mb-3">High Margin Items</h3>
+                    <p class="text-ramen-cream/70 text-sm mb-3">Focus on these when ingredient stock is low:</p>
+                    <ol class="space-y-1 text-sm text-ramen-cream/60">
+                        <li>1. Green Tea (82% margin)</li>
+                        <li>2. Edamame (79% margin)</li>
+                        <li>3. Extra Toppings (73% margin)</li>
+                    </ol>
+                </div>
+                <div class="card-ramen rounded-xl p-6">
+                    <h3 class="text-lg font-bold text-ramen-cream mb-3">Customer Favorites</h3>
+                    <p class="text-ramen-cream/70 text-sm mb-3">These items increase customer satisfaction most:</p>
+                    <ol class="space-y-1 text-sm text-ramen-cream/60">
+                        <li>1. Tonkotsu Ramen - rich flavor</li>
+                        <li>2. Gyoza - perfect appetizer</li>
+                        <li>3. Spicy Tan-Men - heat lovers</li>
+                    </ol>
+                </div>
+                <div class="card-ramen rounded-xl p-6">
+                    <h3 class="text-lg font-bold text-ramen-cream mb-3">Bundle Recommendations</h3>
+                    <p class="text-ramen-cream/70 text-sm mb-3">Suggest these combinations for higher tickets:</p>
+                    <ol class="space-y-1 text-sm text-ramen-cream/60">
+                        <li>• Ramen + Gyoza + Beer</li>
+                        <li>• Ramen + Edamame + Green Tea</li>
+                        <li>• Double Ramen (no drink discount)</li>
+                    </ol>
+                </div>
+                <div class="card-ramen rounded-xl p-6">
+                    <h3 class="text-lg font-bold text-ramen-cream mb-3">Dynamic Pricing</h3>
+                    <p class="text-ramen-cream/70 text-sm mb-3">Adjust prices based on demand:</p>
+                    <ol class="space-y-1 text-sm text-ramen-cream/60">
+                        <li>• Rush hour: +10% pricing</li>
+                        <li>• Slow periods: -15% promo</li>
+                        <li>• Events: special menu pricing</li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seasonal Menu -->
+        <section class="mb-12">
+            <h2 class="text-3xl font-bold text-ramen-orange mb-6">🌸 Seasonal Specials</h2>
+            <div class="card-ramen rounded-xl p-6">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div>
+                        <h3 class="text-lg font-bold text-ramen-cream mb-2">Spring Limited</h3>
+                        <p class="text-ramen-cream/70 text-sm">Sakura Miso Ramen with cherry blossom toppings. Premium pricing at ¥1,500. Available March-May.</p>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-bold text-ramen-cream mb-2">Summer Special</h3>
+                        <p class="text-ramen-cream/70 text-sm">Hiyashi Chuka cold ramen. Light and refreshing at ¥1,100. Popular during June-August.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="flex justify-center py-8">
+            <div id="container-1b8db40ffc64bf3a1952600e0b795216"></div>
+        </div>
+        <div class="flex justify-center py-4">
+            <div id="container-ac2470d524e3e2001035245db8f980ca"></div>
+        </div>
+    </main>
+
+    <footer class="border-t border-ramen-orange/10 py-12 mt-8">
+        <div class="max-w-6xl mx-auto px-6 text-center">
+            <div class="divider mb-8"></div>
+            <p class="text-ramen-cream/40 text-sm">&copy; 2026 Japanese Ramen Simulator Guide. Not affiliated with Wild Dog Inc.</p>
+            <div class="mt-4 flex justify-center gap-4 text-sm">
+                <a href="recipes.html" class="text-ramen-orange/60 hover:text-ramen-orange">Recipes</a>
+                <a href="upgrades.html" class="text-ramen-orange/60 hover:text-ramen-orange">Upgrades</a>
+                <a href="walkthrough.html" class="text-ramen-orange/60 hover:text-ramen-orange">Walkthrough</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
