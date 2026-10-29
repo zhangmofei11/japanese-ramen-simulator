@@ -7,6 +7,21 @@
     <meta name="description" content="About Japanese Ramen Simulator Guide.">
     <link rel="canonical" href="https://japaneseramensimulator.online/about.html">
     <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        ramen: { red: '#DC2626', orange: '#EA580C', yellow: '#FACC15', cream: '#FEF3C7', dark: '#1C1917', darker: '#0C0A09' },
+                        broth: { light: '#F5F0E8', dark: '#2D2016' }
+                    },
+                    fontFamily: { 'jp': ['Noto Sans JP', 'sans-serif'], 'sans': ['Inter', 'sans-serif'] }
+                }
+            }
+        }
+    </script>
     <style>
         * { box-sizing: border-box; }
         body { background: linear-gradient(180deg, #1C1917 0%, #0C0A09 100%); min-height: 100vh; font-family: 'Inter', sans-serif; }
@@ -14,6 +29,7 @@
         .text-ramen-orange { color: #EA580C; }
         .text-ramen-cream { color: #FEF3C7; }
         .divider { height: 2px; background: linear-gradient(90deg, transparent, #DC2626, #EA580C, #FACC15, #EA580C, #DC2626, transparent); }
+        .glow-steam { box-shadow: 0 0 20px rgba(250,204,21,0.3); }
     </style>
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-QSV9HMT98E"></script>
     <script>
@@ -76,9 +92,46 @@
     </script>
 </head>
 <body class="text-ramen-cream antialiased">
-    <header class="card-ramen sticky top-0 z-50 border-b border-ramen/20">
-        <div class="max-w-4xl mx-auto px-6 py-4">
-            <a href="/" class="text-2xl font-bold text-ramen-orange">🍜 Japanese Ramen Simulator</a>
+        <header class="card-ramen sticky top-0 z-50 border-b border-ramen/20">
+        <div class="max-w-6xl mx-auto px-6 py-4">
+            <div class="flex items-center justify-between gap-4">
+                <a href="/" class="flex items-center gap-4 group">
+                    <div class="w-14 h-14 rounded-lg bg-gradient-to-br from-ramen-red to-ramen-orange flex items-center justify-center shadow-lg glow-steam">
+                        <span class="text-3xl">🍜</span>
+                    </div>
+                    <div>
+                        <span class="font-bold text-2xl text-ramen-cream tracking-wide">JAPANESE RAMEN</span>
+                        <span class="block text-xs text-ramen-orange tracking-widest">SIMULATOR</span>
+                    </div>
+                </a>
+                <nav class="hidden lg:flex items-center gap-1 flex-wrap justify-end">
+                    <a href="/" class="px-3 py-2 text-sm text-ramen-cream/70 hover:text-ramen-orange hover:bg-ramen-cream/5 rounded-lg transition-all">Home</a>
+                    <a href="recipes.html" class="px-3 py-2 text-sm text-ramen-cream/70 hover:text-ramen-orange hover:bg-ramen-cream/5 rounded-lg transition-all">Recipes</a>
+                    <a href="ingredients.html" class="px-3 py-2 text-sm text-ramen-cream/70 hover:text-ramen-orange hover:bg-ramen-cream/5 rounded-lg transition-all">Ingredients</a>
+                    <a href="multiplayer.html" class="px-3 py-2 text-sm text-ramen-cream/70 hover:text-ramen-orange hover:bg-ramen-cream/5 rounded-lg transition-all">Multiplayer</a>
+                    <a href="tips.html" class="px-3 py-2 text-sm text-ramen-cream/70 hover:text-ramen-orange hover:bg-ramen-cream/5 rounded-lg transition-all">Tips</a>
+                    <a href="walkthrough.html" class="px-3 py-2 text-sm text-ramen-cream/70 hover:text-ramen-orange hover:bg-ramen-cream/5 rounded-lg transition-all">Walkthrough</a>
+                    <a href="achievements.html" class="px-3 py-2 text-sm text-ramen-cream/70 hover:text-ramen-orange hover:bg-ramen-cream/5 rounded-lg transition-all">Achievements</a>
+                    <a href="upgrades.html" class="px-3 py-2 text-sm text-ramen-cream/70 hover:text-ramen-orange hover:bg-ramen-cream/5 rounded-lg transition-all">Upgrades</a>
+                    <a href="menu.html" class="px-3 py-2 text-sm text-ramen-cream/70 hover:text-ramen-orange hover:bg-ramen-cream/5 rounded-lg transition-all">Menu</a>
+                </nav>
+                <button id="mobile-menu-btn" class="lg:hidden p-3 text-ramen-orange hover:bg-ramen-orange/10 rounded-lg transition-all" aria-label="Menu">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 6h16M4 12h16M4 18h16"/></svg>
+                </button>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden lg:hidden border-t border-ramen/20">
+            <div class="max-w-6xl mx-auto px-6 py-4 space-y-2">
+                    <a href="/" class="block px-4 py-3 text-ramen-cream/70 hover:text-ramen-orange hover:bg-ramen-cream/5 rounded-lg transition-all">Home</a>
+                    <a href="recipes.html" class="block px-4 py-3 text-ramen-cream/70 hover:text-ramen-orange hover:bg-ramen-cream/5 rounded-lg transition-all">Recipes</a>
+                    <a href="ingredients.html" class="block px-4 py-3 text-ramen-cream/70 hover:text-ramen-orange hover:bg-ramen-cream/5 rounded-lg transition-all">Ingredients</a>
+                    <a href="multiplayer.html" class="block px-4 py-3 text-ramen-cream/70 hover:text-ramen-orange hover:bg-ramen-cream/5 rounded-lg transition-all">Multiplayer</a>
+                    <a href="tips.html" class="block px-4 py-3 text-ramen-cream/70 hover:text-ramen-orange hover:bg-ramen-cream/5 rounded-lg transition-all">Tips</a>
+                    <a href="walkthrough.html" class="block px-4 py-3 text-ramen-cream/70 hover:text-ramen-orange hover:bg-ramen-cream/5 rounded-lg transition-all">Walkthrough</a>
+                    <a href="achievements.html" class="block px-4 py-3 text-ramen-cream/70 hover:text-ramen-orange hover:bg-ramen-cream/5 rounded-lg transition-all">Achievements</a>
+                    <a href="upgrades.html" class="block px-4 py-3 text-ramen-cream/70 hover:text-ramen-orange hover:bg-ramen-cream/5 rounded-lg transition-all">Upgrades</a>
+                    <a href="menu.html" class="block px-4 py-3 text-ramen-cream/70 hover:text-ramen-orange hover:bg-ramen-cream/5 rounded-lg transition-all">Menu</a>
+            </div>
         </div>
     </header>
 
@@ -104,6 +157,19 @@
         <div class="max-w-4xl mx-auto px-6 text-center">
             <div class="divider mb-4"></div>
             <p class="text-ramen-cream/40 text-sm">&copy; 2026 Japanese Ramen Simulator Guide</p>
+        <div class="mt-6 flex flex-wrap justify-center gap-x-6 gap-y-2 text-sm">
+                    <a href="/" class="text-ramen-orange/60 hover:text-ramen-orange transition-colors">Home</a>
+                    <a href="recipes.html" class="text-ramen-orange/60 hover:text-ramen-orange transition-colors">Recipes</a>
+                    <a href="ingredients.html" class="text-ramen-orange/60 hover:text-ramen-orange transition-colors">Ingredients</a>
+                    <a href="multiplayer.html" class="text-ramen-orange/60 hover:text-ramen-orange transition-colors">Multiplayer</a>
+                    <a href="tips.html" class="text-ramen-orange/60 hover:text-ramen-orange transition-colors">Tips</a>
+                    <a href="walkthrough.html" class="text-ramen-orange/60 hover:text-ramen-orange transition-colors">Walkthrough</a>
+                    <a href="achievements.html" class="text-ramen-orange/60 hover:text-ramen-orange transition-colors">Achievements</a>
+                    <a href="upgrades.html" class="text-ramen-orange/60 hover:text-ramen-orange transition-colors">Upgrades</a>
+                    <a href="menu.html" class="text-ramen-orange/60 hover:text-ramen-orange transition-colors">Menu</a>
+                    <a href="about.html" class="text-ramen-orange/60 hover:text-ramen-orange transition-colors">About</a>
+                    <a href="privacy-policy.html" class="text-ramen-orange/60 hover:text-ramen-orange transition-colors">Privacy Policy</a>
+        </div>
         </div>
     
     <!-- Related Articles -->
@@ -122,5 +188,13 @@
         </div>
     </section>
 </footer>
+
+    <script>
+        (function () {
+            const btn = document.getElementById('mobile-menu-btn');
+            const menu = document.getElementById('mobile-menu');
+            if (btn && menu) btn.addEventListener('click', () => menu.classList.toggle('hidden'));
+        })();
+    </script>
 </body>
 </html>
